@@ -13,7 +13,8 @@
     "start": "next start",
     "lint": "next lint",
     "postinstall": "prisma generate",
-    "prettier": "prettier --write ."
+    "prettier": "prettier --write .",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@editorjs/code": "^2.8.0",
@@ -73,8 +74,11 @@
     "zod": "^3.21.4"
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.6.5",
+    "@commitlint/config-conventional": "^17.6.5",
     "@types/editorjs__header": "^2.6.0",
     "@types/lodash.debounce": "^4.0.7",
+    "husky": "^8.0.3",
     "prettier": "^2.8.8"
   },
   "description": "This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).",
